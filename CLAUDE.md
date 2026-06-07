@@ -1,10 +1,9 @@
-# stud.ar — AR brick builder for Meta Quest 3
+# studar — AR brick builder for Meta Quest 3
 
 Augmented-reality brick builder for Meta Quest 3, built in Unity 6 on macOS (Apple Silicon).
 See the room through passthrough, place compatible bricks on a real table, snap them together
-with a controller, and walk around what you build. The name = `stud` + `.ar` (a play on
-BrickLink Studio's `stud.io`). This is a fresh project, **separate from Brick Fighter** — no
-shared code or data.
+with a controller, and walk around what you build. The name = `stud` + AR (augmented reality).
+This is a fresh project, **separate from Brick Fighter** — no shared code or data.
 
 > **Not affiliated with the LEGO Group.** LEGO® is a trademark of the LEGO Group. Use "LEGO"
 > only descriptively (adjective + generic noun, e.g. "LEGO® bricks"), never in the project/app

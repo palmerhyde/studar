@@ -1,11 +1,10 @@
-# stud.ar
+# studar
 
 **An augmented-reality brick builder for Meta Quest 3.** See your real room through
 passthrough, place compatible building bricks on a real table, snap them together with a
 controller, and physically walk around what you build.
 
-The name is a play on words: `stud` (the bumps on a brick) + `.ar` (augmented reality —
-and, like `.io`, a real top-level domain) → **StudAR**.
+The name is `stud` (the bumps on a brick) + **AR** (augmented reality) → **studar**.
 
 > ⚠️ **Not affiliated with the LEGO Group.** LEGO® is a trademark of the LEGO Group.
 > This is an independent, fan-made project and is **not** created, sponsored, endorsed by,
