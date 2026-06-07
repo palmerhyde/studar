@@ -1,0 +1,46 @@
+stud.ar — third-party notices & attributions
+=============================================
+
+This project's own source code is licensed under the MIT License (see LICENSE).
+The following third-party data, libraries, and trademarks are used under their
+own terms and are NOT covered by this project's MIT license.
+
+
+Trademark disclaimer
+--------------------
+LEGO® is a trademark of the LEGO Group of companies. This project is an
+independent, fan-made work and is NOT created, sponsored, authorised, endorsed
+by, or affiliated with the LEGO Group in any way. References to "LEGO" in this
+repository are descriptive (nominative) only — to indicate compatibility with,
+or to describe, genuine LEGO® bricks. No claim of any relationship with the
+LEGO Group is made or implied.
+
+
+LDraw parts library
+-------------------
+Brick geometry is derived from the LDraw Parts Library.
+  - License: Creative Commons Attribution License 2.0 (CC-BY 2.0)
+  - Attribution: "This software/data uses the LDraw Parts Library
+    (https://www.ldraw.org). LDraw is a trademark of the Estate of James Jessiman."
+  - Source: https://library.ldraw.org / https://www.ldraw.org/legal-info
+  NOTE: No LDraw-derived assets are committed to this repository yet. When any
+  are added, this attribution applies to them and must be retained.
+
+
+LDCad shadow library
+--------------------
+Brick connectivity metadata is derived from the LDCad shadow library by
+Roland Melkert.
+  - Source: https://www.melkert.net/LDCad / https://github.com/RolandMelkert/LDCadShadowLibrary
+  NOTE: Not committed to this repository yet; attribution applies when added.
+
+
+Meta XR SDK / Mixed Reality Utility Kit (MRUK)
+----------------------------------------------
+Used as a build/runtime dependency for Meta Quest mixed reality.
+  - Provided by Meta Platforms, Inc. under the Oculus SDK License / Meta XR
+    licensing terms. Not redistributed in source form here.
+  - Source: https://developers.meta.com/horizon/
+
+Unity is a trademark of Unity Technologies. Meta and Meta Quest are trademarks
+of Meta Platforms, Inc.

@@ -1,0 +1,27 @@
+# Normalize line endings
+* text=auto
+
+# --- Git LFS: binary art / build assets ---
+# 3D meshes
+*.fbx  filter=lfs diff=lfs merge=lfs -text
+*.obj  filter=lfs diff=lfs merge=lfs -text
+*.glb  filter=lfs diff=lfs merge=lfs -text
+*.gltf filter=lfs diff=lfs merge=lfs -text
+# Textures
+*.png  filter=lfs diff=lfs merge=lfs -text
+*.jpg  filter=lfs diff=lfs merge=lfs -text
+*.tga  filter=lfs diff=lfs merge=lfs -text
+*.psd  filter=lfs diff=lfs merge=lfs -text
+# Audio
+*.wav  filter=lfs diff=lfs merge=lfs -text
+*.mp3  filter=lfs diff=lfs merge=lfs -text
+
+# --- Force-text Unity YAML so diffs/merges work ---
+*.cs        text
+*.shader    text
+*.cginc     text
+*.unity     text
+*.asset     text
+*.prefab    text
+*.mat       text
+*.meta      text
