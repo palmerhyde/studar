@@ -15,9 +15,17 @@ The name is `stud` (the bumps on a brick) + **AR** (augmented reality) → **stu
 
 ## Status
 
-**Pre-development / evaluation.** No engine tooling installed and no Unity project created
-yet. This repository currently holds the planning documents and project scaffolding. The
-first real step is environment setup, then a Phase 0 spike.
+**Environment set up; Quest configuration in progress.** The dev toolchain and headset are
+ready, and the Unity project now lives in this repo. Done so far:
+
+- Unity 6.4 (Apple Silicon) with the Android build toolchain, Meta Quest Developer Hub, and
+  Rosetta 2 installed.
+- Meta developer account + organisation; Developer Mode on; Quest 3 authorised over `adb`.
+- Unity 6 project created at the repo root, with the **Meta XR All-in-One SDK + MRUK**
+  installed and `Assets/Scripts/Units.cs` (the LDU↔Unity conversion, spec §4) in place.
+
+**Next:** switch the build target to Android, apply the Meta Project Setup Tool fixes, then
+build the Phase 0 spike (passthrough → table detection → one anchored brick).
 
 ## What it is
 
@@ -48,6 +56,24 @@ many bricks at 72+ FPS and a real-time snap solver that clicks them together cor
 
 Unity 6 (URP) · Meta XR All-in-One SDK + MRUK · Meta Quest 3 · macOS (Apple Silicon) ·
 controller input · snap/constraint brick model (no physics on placed bricks).
+
+## Development setup
+
+Building and deploying to the headset requires (see the spec §2–3 for the full walkthrough):
+
+- **Unity 6** (6000.x, Apple Silicon) installed via Unity Hub, with the **Android Build
+  Support**, **OpenJDK**, and **Android SDK & NDK Tools** modules. On Apple Silicon, Unity
+  also requires **Rosetta 2** (`softwareupdate --install-rosetta`).
+- **Meta Quest Developer Hub (MQDH)** for deploy/log/cast.
+- A **Meta developer account** with an organisation, **Developer Mode** enabled on the Quest 3,
+  and the headset authorised for `adb` over USB.
+- The Meta XR SDK and MRUK are installed *inside* the project via the Unity Package Manager
+  (`com.meta.xr.sdk.all`) — no manual download needed; opening the project resolves them.
+
+Brick source data (LDraw library + LDCad shadow library) is staged locally under
+`third_party/` and is **git-ignored** — it is not committed. The single 2×4 part used by the
+early phases is `3001.dat`. See [NOTICE](NOTICE) for attribution (LDraw is CC&nbsp;BY&nbsp;4.0,
+the shadow library CC&nbsp;BY-SA&nbsp;4.0).
 
 ## License
 
