@@ -18,9 +18,19 @@ The spec and architecture docs are authoritative for scope. Build strictly to **
 Phase 0.5**; treat the spec's §8 "out of scope" as off-limits until those are proven.
 
 ## Current status
-**Evaluation / pre-setup.** No tooling installed yet, no Unity project created. The next real
-step is environment setup (Unity 6 + Android modules, Meta XR + MRUK, MQDH, Meta dev account /
-dev mode) per the spec §2–3, then the Phase 0 spike.
+**Environment set up; ready to start the Phase 0 spike.** Tooling and device setup per spec §2–3
+are complete:
+- Unity Hub + **Unity 6.4 (6000.4.10f1, Apple Silicon)** with full Android toolchain
+  (Build Support, OpenJDK 17, SDK/NDK — `adb` & `java` verified).
+- **MQDH** installed.
+- **LDraw** complete library + `3001.dat` and the **LDCad shadow library** staged under
+  `third_party/` (gitignored; CC BY 4.0 / CC BY-SA 4.0).
+- **Meta developer account + team** created and verified; **Developer Mode on**; Mac↔headset
+  **adb authorized** (Quest 3 `eureka`, Horizon OS build 204 — shows as `device`).
+
+Still pending on-device: **Space Setup** (run once in the room so MRUK sees the table) — deferred
+until Phase 0 needs it. **Meta XR All-in-One SDK + MRUK** are not installed yet; that happens
+inside the Unity project (UPM) as the first task of the Phase 0 spike (spec §5.3).
 
 ## Locked decisions
 - **Hardware:** Meta Quest 3 (confirmed).
